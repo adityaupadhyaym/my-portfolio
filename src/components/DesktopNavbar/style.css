@@ -1,0 +1,21 @@
+.app-desktop-nav {
+  max-width: 526px;
+}
+
+.app-desktop-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.app-desktop-nav .menu-font {
+  font-weight: 400;
+  line-height: 150.6%;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .app-desktop-nav {
+    max-width: 700px;
+  }
+}

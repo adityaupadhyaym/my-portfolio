@@ -1,0 +1,57 @@
+.team-member {
+  padding: 50px 16px;
+  border: 1px solid #efefef;
+}
+
+.team-member .section-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150.6%;
+  text-align: center;
+}
+
+.team-member .section-description {
+  margin: 18px auto;
+  text-align: center;
+  width: 220px;
+}
+
+.team-member .section-description span {
+  display: block;
+}
+
+.team-member .card-holder {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 8px 8px 8px;
+  justify-content: space-between;
+}
+
+.team-member .card-holder .people-card:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .team-member {
+    padding: 120px 40px;
+  }
+
+  .team-member .section-description {
+    margin-bottom: 60px;
+    width: 360px;
+  }
+
+  .team-member .section-description span {
+    display: inline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-member {
+    padding: 120px 135px;
+  }
+
+  .team-member .section-description {
+    margin-top: 25px;
+  }
+}

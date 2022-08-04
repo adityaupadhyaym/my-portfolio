@@ -1,0 +1,16 @@
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: palegreen;
+    /* margin-left: 80px; */
+    height: 100%;
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    border: none;
+}
+.overlay {
+   height: 100%;
+   border: none;
+   background-color: red;
+}

@@ -1,0 +1,28 @@
+/* Border Color Utils Class */
+.border-orange {
+  border-color: var(--color-orange);
+}
+
+.border-orange-v2 {
+  border-color: var(--color-orange-v2);
+}
+
+.border-black {
+  border-color: var(--color-black);
+}
+
+.border-dark {
+  border-color: var(--color-dark);
+}
+
+.border-dark-v1 {
+  border-color: var(--color-dark-v1);
+}
+
+.border-dark-v2 {
+  border-color: var(--color-dark-v2);
+}
+
+.border-gray {
+  border-color: var(--color-gray);
+}

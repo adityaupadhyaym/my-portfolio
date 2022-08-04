@@ -1,0 +1,92 @@
+.poster-section {
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.poster-section .poster-title {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 123.6%;
+  margin: 0 20px;
+}
+
+.poster-section .poster-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150.6%;
+  margin: 18px 0 25px 0;
+}
+
+.poster-section .poster-text {
+  padding-top: 50px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.poster-section .poster-social-icons {
+  display: none;
+}
+
+.poster-section .poster-image {
+  max-width: 520px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .poster-section {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: start;
+    padding: 70px 40px;
+    align-items: flex-start;
+  }
+
+  .poster-section .poster-image,
+  .poster-section .poster-text {
+    flex: 1;
+  }
+
+  .poster-section .poster-title {
+    margin: 0;
+  }
+
+  .poster-section .poster-image {
+    text-align: center;
+    padding-top: 12px;
+    position: relative;
+    margin: 0;
+  }
+
+  .poster-section .poster-social-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 55px;
+  }
+
+  .poster-section .poster-social-icons button:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  .poster-section .poster-text {
+    padding-top: 0;
+  }
+
+  .poster-section .poster-image-tag {
+    object-fit: contain;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .poster-section {
+    padding: 80px 135px;
+  }
+
+  .poster-section .poster-image {
+    max-width: 700px;
+  }
+}

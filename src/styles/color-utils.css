@@ -1,0 +1,32 @@
+/* Text Color Utils Class */
+.text-orange {
+  color: var(--color-orange);
+}
+
+.text-orange-v2 {
+  color: var(--color-orange-v2);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
+.text-dark {
+  color: var(--color-dark);
+}
+
+.text-dark-v1 {
+  color: var(--color-dark-v1);
+}
+
+.text-dark-v2 {
+  color: var(--color-dark-v2);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+.text-white {
+  color: var(--color-white);
+}

@@ -1,0 +1,29 @@
+.app-primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Frank Ruhl Libre", serif;
+  box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 10%);
+  background-image: linear-gradient(to left,  #ff4181, #fed643);
+  transition: all 0.3s ease;
+  cursor: pointer;
+ 
+}
+.app-primary-button:hover {
+  background-image: linear-gradient(to left, #fed643, #ff4181);
+
+}
+
+.app-primary-button > img {
+  margin-left: 24px;
+}
+

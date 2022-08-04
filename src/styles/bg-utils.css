@@ -1,0 +1,32 @@
+/* Background Color Utils Class */
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-orange-v2 {
+  background-color: var(--color-orange-v2);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-dark-v1 {
+  background-color: var(--color-dark-v1);
+}
+
+.bg-dark-v2 {
+  background-color: var(--color-dark-v2);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
