@@ -1,0 +1,50 @@
+.myServices {
+    padding: 0 15px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.myServices .my-service-utils {
+    margin: 15px 0;
+    border-radius: 1px;
+    align-items: center;
+    box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 10%);
+    margin: 20px 0 15px 0;
+}
+.myServices .myServices-card-1 {
+    background-image: linear-gradient(to top, #00a9ce, #8af5d1);
+    margin-top: 50px;
+  }
+.myServices .myServices-card-2 {
+    background-image: linear-gradient(to top, #645cff, #ff5b8a);
+}
+.myServices .myServices-card-3 {
+    background-image: linear-gradient(to top, #cc00ff, #8484fb);
+}
+.myServices .myServices-card-4 {
+    background-image: linear-gradient(to top, #81dcfd, #f4d63d);
+}
+.my-service-contents {
+    padding: 39px 0px 39px 25px;
+    color: #fff;
+}
+.my-service-contents ul {
+    list-style: circle;
+    margin-left: 25px;
+}
+.my-service-contents ul li {
+    font-size: 25px;
+}
+.my-service-contents ul li span {
+    font-size: 16px;
+}
+.my-services-description {
+    font-size: 15px;
+    margin: 5px 0px 10px 0;
+
+}
+.myServices .my-service-img {
+padding: 25px;
+text-align: center;
+
+}

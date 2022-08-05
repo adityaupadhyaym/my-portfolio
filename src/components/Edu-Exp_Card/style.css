@@ -1,0 +1,62 @@
+.edu_exp_card {
+    margin: 15px 0;
+    padding: 25px;
+    box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 10%);
+    border-radius: 1px;
+    background: #fff;
+}
+
+
+.edu_exp_top_wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    position: relative;
+}
+.edu_exp_year_wrapper {
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+
+.edu_exp_year {
+   
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 18px;
+    padding-left: 30px;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Frank Ruhl Libre", serif;
+    background-image: linear-gradient(to right, #fed643, #ff4181);
+    background-repeat: no-repeat;
+    clip-path: polygon(9% 36%, 11% 20%, 100% 20%, 100% 80%, 9% 80%, 9% 59%, 0 50%);
+
+
+
+}
+.edu_exp_place {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #000;
+}
+.edu_exp_title {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 5px  0 10px;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #000;
+
+}
+.edu_exp_subTitle {
+    font-size: 1em;
+    color: #696969;
+    font-family: "Roboto", sans-serif;
+}
+
+

@@ -1,20 +1,25 @@
-import { AiOutlineHome, AiOutlineUser, AiOutlineDollar } from "react-icons/ai";
-import { RiFileListLine } from "react-icons/ri";
-import { GrServices, GrGroup } from "react-icons/gr";
-import { CgWebsite } from "react-icons/cg";
-import { FaBlogger } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
-
-
-import Typography from '../Typography';
+import {Link} from 'react-router-dom';
+import { sideBarData } from './sideBarData';
 
 import './style.css';
 
 const MobileNavbar = () => {
+ 
+
   return (
     <nav className='app-mobile-nav'>
       <ul>
-        <li>
+        {sideBarData.map((item, index) => {
+          
+          return (
+            <li key={index} className={item.className} >
+              <Link to={item.path}> {item.icon} <span > {item.title}</span>
+              </Link>
+            </li>
+          )
+        })}
+
+        {/* <li>
           <AiOutlineHome style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
             Home
@@ -72,7 +77,7 @@ const MobileNavbar = () => {
           <Typography type='H3' className='menu-font text-black'>
             Contact
           </Typography>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

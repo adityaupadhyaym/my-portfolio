@@ -1,13 +1,14 @@
 .home {
     padding: 0 15px;
     font-family: "Frank Ruhl Libre", serif;
-
+    margin-bottom:60px;
 }
 
 .static-text {
     font-size: 42px;
     font-weight: 400;
     margin-bottom: 0;
+    margin-top: 50px;
 
 }
 
@@ -61,4 +62,7 @@
 .banner-btn-1 {
     margin-top: 20px;
     margin-bottom: 70px;
+}
+.poster-image-tag {
+margin-bottom: 60px;
 }

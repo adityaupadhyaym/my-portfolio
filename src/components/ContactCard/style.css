@@ -1,0 +1,22 @@
+.contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.contact-card-text-wrapper .contact-card-title {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-card-text-wrapper .contact-card-subTitle {
+    font-size: 18px;
+    font-weight: 600;
+  
+
+}
