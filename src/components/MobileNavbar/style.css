@@ -1,32 +1,31 @@
-.app-nav {
+.app-mobile-nav {
   flex: 1;
-  max-width: 526px;
-  display: none;
+  max-width: 400px;
+  transition: all 0.3s ease;
 }
 
-.app-nav ul {
+.app-mobile-nav ul {
   list-style: none;
   display: flex;
+  margin-left: 30px;
+  flex-direction: column;
  
 }
 .app-mobile-nav ul li {
   list-style: none;
- padding-left: 15px;
  margin-right: 20px;
  border-radius: 2px;
+ padding: 15px 20px ;
   color:  black;
   display: flex;
   align-items: center;
   cursor: pointer;
 
 }
-.app-mobile-nav ul li:hover {
-  background-color: #1a83ff;
-  color: white;
- 
-}
 
-.app-mobile-nav ul li .menu-font {
+.app-mobile-nav ul li a {
+  text-decoration: none;
+  color: #000;
   font-weight: 400;
   line-height: 85%;
   cursor: pointer;
@@ -36,12 +35,24 @@
  margin-left: 15px;
   text-transform: capitalize;
 
+}
+.app-mobile-nav ul li:hover {
+  background-color: #1a83ff;
+  color: white;
  
 }
+
+
 
 @media (min-width: 768px) {
   .app-nav {
     display: block;
+  }
+  .app-mobile-nav ul {
+    
+    margin-left: 50px;
+
+   
   }
 }
 

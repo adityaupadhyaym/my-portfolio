@@ -6,13 +6,13 @@ import './style.css';
 const customStyles = {
   content: {
     top: '0',
-    left: '70px',
     right: '0',
     bottom: '0',
     borderRadius: '0',
     padding: '0',
     border: 'none',
-    zIndex : '1',
+    zIndex : '10000',
+    width : "350px"
   },
 };
 

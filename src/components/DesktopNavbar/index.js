@@ -1,3 +1,4 @@
+ import {Link} from 'react-router-dom';
 import Typography from '../Typography';
 
 import './style.css';
@@ -11,52 +12,52 @@ const DesktopNavbar = (props) => {
       <ul>
         <li>
           <Typography type='H5' className='menu-font text-black'>
-            Home
+          <Link to="/">Home</Link>
           </Typography>
         </li>
 
         <li>
           <Typography type='H5' className='menu-font text-black'>
-            About Me
+          <Link to='/about'>About Me</Link>
           </Typography>
         </li>
 
         <li>
           <Typography type='H5' className='menu-font text-black'>
-            Resume
+          <Link to='/resume'>Resume</Link>
           </Typography>
         </li>
 
         <li>
           <Typography type='H5' className='menu-font text-black'>
-            Services
+          <Link to='/services'> Services</Link>
           </Typography>
         </li>
 
         <li>
           <Typography type='H5' className='menu-font text-black'>
-           Portfolio
+          <Link to='/portfolio'> Portfolio</Link>
           </Typography>
         </li>
 
         <li>
           <Typography type='H5' className='menu-font text-black'>
-           Pricing
+          <Link to='/pricing'>Pricing</Link>
           </Typography>
         </li>
         <li>
           <Typography type='H5' className='menu-font text-black'>
-          Clients
+          <Link to='/clients'>Clients</Link>
           </Typography>
         </li>
         <li>
           <Typography type='H5' className='menu-font text-black'>
-           Blog
+          <Link to='/blog'>Blog</Link>
           </Typography>
         </li>
         <li>
           <Typography type='H5' className='menu-font text-black'>
-          Contact
+          <Link to='/contact'>Contact</Link>
           </Typography>
         </li>
       </ul>

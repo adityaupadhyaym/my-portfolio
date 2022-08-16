@@ -1,0 +1,55 @@
+.blogCard{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+.blogCard img{
+    width: 100%;
+    
+}
+
+.read-more-blog{
+    position: absolute;
+   bottom:-330px;
+   right: 10px;
+   left: 10px;
+   z-index: 1;
+   background-color: #fff;
+   padding: 15px 10px;
+
+}
+
+@media (min-width: 500px) {
+
+    .read-more-blog{
+        position: absolute;
+       bottom:-140px;
+       left: 9px;
+       z-index: 1;
+       background-color: #fff;
+       padding: 15px 10px;
+    
+    }
+
+
+}
+
+@media (min-width: 1000px) {
+    .blogCard{
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    } 
+}
+
+@media (min-width:1200px) {
+   
+.read-more-blog{
+ 
+   bottom:-200px;
+   
+
+}
+    
+}

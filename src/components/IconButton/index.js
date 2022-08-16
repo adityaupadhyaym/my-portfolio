@@ -8,7 +8,7 @@ const PrimaryButton = (props) => {
 
   return (
     <button className={getClassNames()} type='button' onClick={props.onClick}>
-      <AppImage src={props.src} alt={props.alt} />
+      {props.children}
     </button>
   );
 };

@@ -4,6 +4,7 @@
     box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 10%);
     border-radius: 1px;
     background: #fff;
+   
 }
 
 
@@ -16,7 +17,7 @@
 .edu_exp_year_wrapper {
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -10px;
 }
 
 .edu_exp_year {
@@ -58,5 +59,18 @@
     color: #696969;
     font-family: "Roboto", sans-serif;
 }
+@media (min-width : 768px) {
+    .edu_exp_card{
+        max-width: 650px;
+        margin: 20px auto;
+    }
+}
 
+@media (min-width : 992px){
+    .edu_exp_card{
+        margin: 15px 25px;
+        max-width: 550px;
+    }
+  
+}
 

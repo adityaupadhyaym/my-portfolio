@@ -1,16 +1,23 @@
 .modal {
     position: absolute;
     top: 0px;
-    left: 0;
-    background-color: palegreen;
-    /* margin-left: 80px; */
+   right: 0;
+    max-width: 350px;
+    background-color: white;
     height: 100%;
-    padding: 10px;
-    transition: all 0.3s ease 0s;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
     border: none;
 }
 .overlay {
    height: 100%;
    border: none;
    background-color: red;
+}
+@media (min-width:768px){
+    .modal {
+      
+        max-width: 450px;
+        
+    }
 }

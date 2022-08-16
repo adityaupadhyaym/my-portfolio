@@ -1,0 +1,113 @@
+.myPortfolio {
+    padding: 0 15px;
+    margin-top: 50px;
+}
+
+.my-portfolio-buttons ul {
+    margin: 40px 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.my-portfolio-buttons ul li {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.gallary-data {
+    text-align: center;
+
+}
+
+.portfolio-video {
+    max-width: 320px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.portfolio-image {
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.portfolio-btn-bg-1{
+    color: black;
+    background-image: linear-gradient(to right, #fff, #fff);
+}
+.portfolio-btn-bg-2{
+    color: black;
+    background-image: linear-gradient(to right, #fed643, #ff4181);
+}
+
+
+
+
+
+@media (min-width: 576px) {
+
+    .myPortfolio {
+        padding: 0 30px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .gallary-data {
+        column-count: 2;
+        column-gap: 5px;
+    }
+
+    .myPortfolio {
+        padding: 0 50px;
+    }
+
+    .portfolio-video {
+        margin: 10px 15px;
+    }
+
+    .portfolio-image {
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallary-data {
+        column-count: 3;
+    }
+
+    .my-portfolio-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .my-portfolio-header>div {
+        flex-basis: 50%;
+    }
+
+    .my-portfolio-buttons {
+        margin-top: 20px;
+    }
+
+    .myPortfolio {
+        padding: 0 70px;
+    }
+
+}
+
+
+@media (min-width : 1200px) {
+    .myPortfolio {
+        padding: 0 100px;
+    }
+}

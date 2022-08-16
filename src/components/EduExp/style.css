@@ -1,0 +1,58 @@
+.edu_exp {
+   padding: 0 15px;
+   margin-top: 50px;
+   min-height: 100vh;
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+.edu_exp_btn {
+   margin: 50px auto;
+}
+
+.edu-exp-first-text {
+   margin-bottom: 60px;
+}
+
+
+@media (min-width : 576px) {
+   .edu_exp {
+      padding: 15px 350px 0 35px;
+   }
+}
+
+@media (min-width : 768px) {
+   .edu_exp {
+      padding: 15px 50px 0 50px;
+   }
+}
+
+@media (min-width : 992px) {
+   .edu-exp-card-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   .edu-exp-card-wrapper>div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+    }
+    .edu_exp {
+      padding: 15px 70px 0 70px;
+   }
+}
+
+@media (min-width :1200px) {
+   .edu_exp {
+      padding: 15px 100px 0 100px;
+   }
+   .edu-exp-heading-wrapper {
+      padding: 0 20px;
+   }
+
+}

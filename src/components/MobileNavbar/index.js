@@ -1,5 +1,16 @@
+// import {Link} from 'react-router-dom';
+// import { sideBarData } from './sideBarData';
 import {Link} from 'react-router-dom';
-import { sideBarData } from './sideBarData';
+import Typography from '../Typography';
+
+import * as AiIcons from "react-icons/ai";
+import * as RiIcons from "react-icons/ri";
+import * as GrIcons from "react-icons/gr";
+import * as CgIcons from "react-icons/cg";
+import * as FaIcons from "react-icons/fa";
+import * as FiIcons from "react-icons/fi";
+
+
 
 import './style.css';
 
@@ -9,7 +20,7 @@ const MobileNavbar = () => {
   return (
     <nav className='app-mobile-nav'>
       <ul>
-        {sideBarData.map((item, index) => {
+        {/* {sideBarData.map((item, index) => {
           
           return (
             <li key={index} className={item.className} >
@@ -17,67 +28,70 @@ const MobileNavbar = () => {
               </Link>
             </li>
           )
-        })}
-
-        {/* <li>
-          <AiOutlineHome style={{ fontSize: '25px' }} />
-          <Typography type='H3' className='menu-font text-black'>
-            Home
-          </Typography>
-        </li>
+        })} */}
 
         <li>
-          < AiOutlineUser style={{ fontSize: '25px' }} />
+          <AiIcons.AiOutlineHome style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            About Me
+            <Link to="/">Home</Link>
           </Typography>
         </li>
 
         <li>
-          < RiFileListLine style={{ fontSize: '25px' }} />
+          < AiIcons.AiOutlineUser style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Resume
+          <Link to='/about'>About Me</Link>
           </Typography>
         </li>
 
         <li>
-          < GrServices style={{ fontSize: '25px' }} />
+          < RiIcons.RiFileListLine style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Services
+          <Link to='/resume'>Resume</Link>
           </Typography>
         </li>
 
         <li>
-          < CgWebsite style={{ fontSize: '25px' }} />
+          < GrIcons.GrServices style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Portfolio
+     
+            <Link to='/services'> Services</Link>
+       
           </Typography>
         </li>
 
         <li>
-          < AiOutlineDollar style={{ fontSize: '25px' }} />
+          < CgIcons.CgWebsite style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Pricing
+         
+            <Link to='/portfolio'> Portfolio</Link>
+          </Typography>
+        </li>
+
+        <li>
+          < AiIcons.AiOutlineDollar style={{ fontSize: '25px' }} />
+          <Typography type='H3' className='menu-font text-black'>
+          <Link to='/pricing'>Pricing</Link>
           </Typography>
         </li>
         <li>
-          <  GrGroup style={{ fontSize: '25px' }} />
+          < GrIcons.GrGroup style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Clients
+          <Link to='/clients'>Clients</Link>
           </Typography>
         </li>
         <li>
-          <  FaBlogger style={{ fontSize: '25px' }} />
+          < FaIcons.FaBlogger style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Blog
+          <Link to='/blog'>Blog</Link>
           </Typography>
         </li>
         <li>
-          < FiPhoneCall style={{ fontSize: '25px' }} />
+          < FiIcons.FiPhoneCall style={{ fontSize: '25px' }} />
           <Typography type='H3' className='menu-font text-black'>
-            Contact
+          <Link to='/contact'>Contact</Link>
           </Typography>
-        </li> */}
+        </li>
       </ul>
     </nav>
   );

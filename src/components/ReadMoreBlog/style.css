@@ -1,0 +1,129 @@
+.read-more-blog {
+    display: flex;
+    box-shadow: 0px 3px 15px 0px rgba(186, 138, 138, 0.1);
+   
+}
+.read-more-blog ul li { 
+    padding:0px 7px ;
+ 
+}
+
+.read-more-left > div, .read-more-right > div {
+  margin-top: 5px;
+}
+
+.read-more-blog .read-more-left>ul {
+
+    width: 40px;
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #e3e1e1;
+
+}
+
+.read-more-blog .read-more-left>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e3e1e1;
+    position: relative;
+}
+
+.read-more-blog .read-more-left>ul>li>svg {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #696969;
+    font-size: 25px;
+}
+
+.read-more-blog .read-more-left>ul>li>span {
+    font-size: 20px;
+    color: #696969;
+    padding-bottom: 5px;
+}
+
+.read-more-blog .read-more-left>ul>li:first-of-type>div {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 59px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+.read-more-blog .read-more-left>ul>li:first-of-type:hover>div {
+    height: 100px;
+    overflow: visible;
+}
+
+
+
+
+
+.read-more-blog .read-more-right {
+    padding:0 15px;
+}
+
+.read-more-blog .read-more-right>div {
+    display: flex;
+}
+
+.read-more-blog .read-more-right>div p {
+    margin-right: 10px;
+    font-size: 1em;
+    color: #696969;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+
+
+.read-more-blog .read-more-right>h3 {
+    line-height: 30px;
+    margin: 10px 0;
+    color: #000;
+}
+
+
+.read-more-blog .read-more-right>p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #696969;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
+}
+
+@media (max-width:370px) {
+    .read-more-left > div, .read-more-right > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .read-more-blog {
+        flex-direction: column;
+    }
+
+    .read-more-blog .read-more-left>ul {
+        width: 100%;
+        display: flex;
+        border: 0;
+        border-bottom: 1px solid rgb(226, 225, 225);
+    }
+
+    .read-more-blog .read-more-left>ul>li {
+        margin-right: 10%;
+        margin-bottom: 2px;
+        border: 0;
+    }
+
+    .read-more-blog .read-more-left>ul>li>svg {
+        margin-top: 0;
+    }
+}
+

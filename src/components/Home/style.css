@@ -1,8 +1,10 @@
 .home {
     padding: 0 15px;
     font-family: "Frank Ruhl Libre", serif;
-    margin-bottom:60px;
+    /* min-height: 100vh; */
+    /* margin-bottom: 60px; */
 }
+
 
 .static-text {
     font-size: 42px;
@@ -18,6 +20,7 @@
     height: 50px;
     overflow: hidden;
     margin-top: 0px;
+    animation: typing 2.5s steps(10) infinite alternate;
 }
 
 .dynamic-text li {
@@ -26,7 +29,7 @@
     font-weight: 700;
     position: relative;
     top: 0;
-    animation: slide 8s steps(4) infinite;
+    animation: slide 15s steps(4) infinite;
     color: black;
 
 }
@@ -38,7 +41,7 @@
     }
 }
 
-.dynamic-text li::after {
+/* .dynamic-text li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -46,23 +49,172 @@
     width: 100%;
     background-color: white;
     animation: typing 2s steps(10) infinite;
-}
+} */
 
 @keyframes typing {
 
-    40%,
-    60% {
-        left: calc(50% + 28px);
+   0% {
+        width: 0;
     }
 
     100% {
-        left: 0;
+        width: 70%;
     }
 }
+
 .banner-btn-1 {
     margin-top: 20px;
     margin-bottom: 70px;
 }
+
 .poster-image-tag {
-margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+@media (min-width : 576px) {
+    .home {
+        margin: 0 30px;
+    }
+
+    .static-text {
+        line-height: 70px;
+        font-size: 60px;
+    }
+
+    .dynamic-text {
+        height: 70px;
+    }
+    .dynamic-text li {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    @keyframes slide {
+
+        100% {
+            top: -280px;
+        }
+    }
+
+   .poster-home-text {
+    max-width: 550px;
+    position: relative;
+    z-index: 1;
+   }
+ 
+
+}
+
+@media (min-width : 1040px) {
+    .home-wrapper {
+        margin: 30px 0px 0px 70px;
+    }
+
+    .banner-btn-1 {
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+
+    .static-text, .dynamic-text li span {
+        font-size: 55px;
+    }
+
+    /* .dynamic-text {
+        font-size: 55px;
+    } */
+   
+
+    /* .home-contact-card-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+}
+
+@media (min-width : 1200px) {
+    
+    .home-wrapper {
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+}
+.home-poster-img {
+    position: relative;
+}
+.home-poster-img::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background-image: url(http://demos.codexcoder.com/labartisan/html/maxino/assets/images/banner/01.png);
+    background-repeat: no-repeat;
+   animation : animate1 20s infinite linear;
+}
+
+
+.static-text, .dynamic-text li span {
+    font-size:60px;
+    line-height: 70px;
+ 
+}
+
+.home {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: url(http://demos.codexcoder.com/labartisan/html/maxino/assets/images/shape/01-b.png);
+    background-repeat: no-repeat;
+    width: 63%;
+    height: 100%;
+   z-index: -100;
+}
+.home::after {
+    content: "";
+    position: absolute;
+    top:-150px;
+    left: 0px;
+    background-image: url(http://demos.codexcoder.com/labartisan/html/maxino/assets/images/banner/bg.png);
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 150%;
+   z-index: -100;
+
+}
+.home-poster-img{
+    overflow: hidden;
+    height: 515px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.poster-home-text {
+    max-width: 550px;
+  
+   }
+
+.poster-image-tag {
+    z-index: 1;
+    height: 600px;
+    width: 100%;
+    object-fit: contain;
+   
+}
+.banner-btn-1 {
+    margin-left: 0px;
+        margin-top: 30px;
+   
+}
+.poster-home-text {
+    margin-left: -20px;
+    margin-top: 50px;
+}
+
 }

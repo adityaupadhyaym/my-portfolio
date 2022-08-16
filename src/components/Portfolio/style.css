@@ -1,5 +1,5 @@
-.portfolio {
-    padding: 0 15px;
+.aboutMe {
+    padding: 50px 15px 0 15px;
 
 }
 .info-details li {
@@ -15,10 +15,15 @@
 .info-details li .info {
   width: calc(100% - 130px);
     text-align: start;
+    
 }
 .info-details li .name {
     width:  130px;
     text-align: left;
+    font-size: 20px;
+    color: #696969;
+    font-family: "Roboto", sans-serif;
+    line-height: 26px;
 
 }
 .sponsor-img-wrapper {
@@ -46,3 +51,63 @@ display: flex;
     font-family: "Roboto", sans-serif;
     line-height: 26px;
 }
+    
+.about-contact-wrapper{
+    margin-bottom: 70px;
+   }
+.portfolio-right-section{
+    margin-top: 50px;
+}
+
+
+
+
+@media (min-width :576px){
+    .aboutMe {
+        padding: 50px 50px 0 50px;
+    
+    }
+
+
+
+}
+
+
+
+@media (min-width : 992px){
+    .aboutMe {
+       padding: 20px 80px 0 80px;
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      margin-top: 30px;
+    }
+    .portfolio-left-section, .portfolio-right-section {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        margin-left: 25px;
+        margin-top: 0;
+    }
+        
+    .about-contact-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px;
+       }
+      .about-contact-wrapper > .about-contact-email {
+        margin: 0px 10px;
+       }
+       .info-details .name .port-typo, .portfolio-para  {
+        font-size: 16px;
+    }
+}
+
+@media (min-width :1200px) {
+    .about-contact-wrapper > .about-contact-email {
+        margin: 0px 100px;
+       }
+ }

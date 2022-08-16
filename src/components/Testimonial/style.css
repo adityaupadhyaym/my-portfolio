@@ -1,0 +1,54 @@
+.testimonial {
+    padding: 50px 15px;
+}
+.testimonial-card-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    flex-wrap: nowrap;
+
+}
+
+.testimonial-card {
+    min-width: 300px;
+    margin-right: 30px;
+    animation: scrolling 30s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+
+}
+
+@media (min-width :576px) {
+    .testimonial {
+        padding: 50px 30px;
+    }
+    
+}
+
+@media (min-width :768px) {
+    .testimonial {
+        padding: 50px 50px;
+    }
+    
+}
+@media (min-width :992px) {
+    .testimonial {
+        padding: 50px 70px;
+    }
+    
+}
+
+
+@media (min-width : 1200px) {
+    .testimonial {
+        padding: 50px 100px;
+    }
+}
