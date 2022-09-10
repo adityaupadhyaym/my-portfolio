@@ -25,14 +25,14 @@ const App = () => {
      <Header/>
      <Routes>
      <Route path='/' element={<Home/>}/>
-      <Route path='about' element={<Portfolio/>}/>
-      <Route path='resume' element={<EduExp/>}/>
-      <Route path='services' element={<MyServices/>}/>
-      <Route path='portfolio' element={<MyPortfolio/>}/>
-      <Route path='pricing' element={<Pricing/>}/>
-      <Route path='clients' element={<Testimonial/>}/>
-      <Route path='blog' element={<Blog/>}/>
-      <Route path='contact' element={<HireMe/>}/>
+      <Route path='/about' element={<Portfolio/>}/>
+      <Route path='/resume' element={<EduExp/>}/>
+      <Route path='/services' element={<MyServices/>}/>
+      <Route path='/portfolio' element={<MyPortfolio/>}/>
+      <Route path='/pricing' element={<Pricing/>}/>
+      <Route path='/clients' element={<Testimonial/>}/>
+      <Route path='/blog' element={<Blog/>}/>
+      <Route path='/contact' element={<HireMe/>}/>
       <Route path='*' element={<h1> 404 error ! Page not found.</h1>}/>
      
      </Routes>
